@@ -61,7 +61,8 @@ public class UserPatchExtension extends UserExtension
     public String getApiVersion()
     {
         if (apiVersion == null)
-            throw new ProjectConfigurationException("You must set the Minecraft Version!", new NullPointerException());
+            apiVersion = "";
+//            throw new ProjectConfigurationException("You must set the Minecraft Version!", new NullPointerException());
         
         return apiVersion;
     }

@@ -5,6 +5,8 @@ import net.minecraftforge.gradle.ZipFileTree;
 import org.gradle.api.Project;
 import org.gradle.api.file.FileTree;
 import org.gradle.api.internal.file.collections.FileTreeAdapter;
+import org.gradle.api.file.FileVisitor;
+//import org.gradle.api.internal.file.archive.ZipFileTree;
 
 @SuppressWarnings("serial")
 public class DelayedFileTree extends DelayedBase<FileTree>

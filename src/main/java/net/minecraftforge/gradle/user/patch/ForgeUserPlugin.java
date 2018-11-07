@@ -39,8 +39,8 @@ public class ForgeUserPlugin extends UserPatchBasePlugin
         if (buildNumber == 1517 || buildNumber == 0)
             return; // isolated newer 1.7 forge buildnumber, or 0 for testing
 
-        if (buildNumber < 1048 || buildNumber > 1502)
-            throw new IllegalArgumentException("ForgeGradle 1.2 only works for Forge versions 10.12.0.1048 -- 11.14.3.1502");
+//        if (buildNumber < 1048 || buildNumber > 1502)
+//            throw new IllegalArgumentException("ForgeGradle 1.2 only works for Forge versions 10.12.0.1048 -- 11.14.3.1502");
     }
 
     @Override

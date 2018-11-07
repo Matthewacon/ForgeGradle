@@ -179,10 +179,10 @@ public class ZipFileTree implements MinimalFileTree
         {
             return new RelativePath(!entry.isDirectory(), entry.getName().split("/"));
         }
-        
+
         // Stuff below this line was    --------------------------------------------------
-        // Stolen from Gradle's  org.gradle.api.internal.file.AbstractFileTreeElement 
-        
+        // Stolen from Gradle's  org.gradle.api.internal.file.AbstractFileTreeElement
+
         public String toString()
         {
             return getDisplayName();
@@ -270,5 +270,10 @@ public class ZipFileTree implements MinimalFileTree
     public void registerWatchPoints(Builder arg0)
     {
         // uh.. nothing..
+    }
+
+    @Override
+    public void visitTreeOrBackingFile(FileVisitor visitor) {
+
     }
 }

@@ -120,7 +120,7 @@ public abstract class UserBasePlugin<T extends UserExtension> extends BasePlugin
                 TaskExecutionGraph graph = project.getGradle().getTaskGraph();
                 String path = project.getPath();
                 
-                graph.getAllTasks().clear();
+//                graph.getAllTasks().clear();
 
                 if (graph.hasTask(path + "setupDecompWorkspace"))
                 {
@@ -1128,13 +1128,13 @@ public abstract class UserBasePlugin<T extends UserExtension> extends BasePlugin
         }
 
         // use zinc for scala compilation
-        project.getTasks().withType(ScalaCompile.class, new Action() {
-            @Override
-            public void execute(Object arg0)
-            {
-                ((ScalaCompile) arg0).getScalaCompileOptions().setUseAnt(false);
-            }
-        });
+//        project.getTasks().withType(ScalaCompile.class, new Action() {
+//            @Override
+//            public void execute(Object arg0)
+//            {
+//                ((ScalaCompile) arg0).getScalaCompileOptions().setUseAnt(false);
+//            }
+//        });
     }
 
     /**
